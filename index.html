@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TETRIS | By Ugeon</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main-container">
+            <span class="up">
+                <p>SPEED UP!</p>
+            </span>
+            <div class="game-start">
+                <h1>TETRIS</h1>
+                <div class="button-box">
+                    <button class="start-button">Start</button>
+                    <button class="option-button">Sound</button>
+                    <button class="HTP-button">how to play</button>
+                </div>
+            </div>
+            <div class="playground">
+                <ul></ul>
+                <div class="game-text">
+                    <h1>Game Over</h1>
+                    <button>Retry</button>
+                </div>
+                <div class="pause-container">
+                    <h1>PAUSE</h1>
+
+                    <div class="pause-option">
+                        <div class="sound-button"><h2>Sound</h2></div>
+                        <div class="re-button"><h2>Restart</h2></div>
+                        <div class="main-button"><h2>Exit</h2></div>
+                    </div>
+                    <div class="pause-volume">
+                    <h3>MUSIC</h3>
+                    <div class="volume-container">
+                        <input type="range" id="volumeSlider" min="0" max="100" value="50">
+                    </div>
+                    <audio autoplay loop id="audioPlayer" src="" controls></audio>
+                    <h3>select music</h3>
+                    <div class="select-music">
+                        <div class="first-music">
+                            <h4>1</h4>
+                        </div>
+                        <div class="second-music">
+                            <h4>2</h4>
+                        </div>
+                        <div class="third-music">
+                            <h4>3</h4>
+                        </div>
+                        <div class="fourth-music">
+                            <h4>4</h4>
+                        </div>
+                        <h3 class="pause-effect">effect</h3>
+                        <div class="effect-volume-container">
+                        <input type="range" id="pauseEffectSlider" min="0" max="100" value="50">
+                        </div>
+                        <div class="sound-exit">X</div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="score-container">
+                <h2>SCORE</h2>
+                <div class="score">0</div>
+            </div>
+            <div class="keep-container">
+                <h2>HOLD</h2>
+                <div class="keep-block"></div>
+            </div>
+            <div class="next-blocks">
+                <h2>Next</h2>
+                <div class="next-blocks-container">
+                    <div class="next-block"></div>
+                    <div class="next-block"></div>
+                    <div class="next-block"></div>
+                </div>
+            </div>
+            <div class="level-container">
+                <h2>LEVEL</h2>
+                <div class="level">1</div>
+            </div>
+            <div class="line-container">
+                <h2>LINE</h2>
+                <div class="line">0</div>
+            </div>
+            <div class="option-menu">
+                <h3>MUSIC</h3>
+                <div class="volume-container">
+                    <input type="range" id="mainVolumeSlider" min="0" max="100" value="50">
+                </div>
+                <audio autoplay loop id="audioPlayer" src="" controls></audio>
+                <h3>select music</h3>
+                <div class="select-music">
+                    <div class="first-music">
+                        <h4>1</h4>
+                    </div>
+                    <div class="second-music">
+                        <h4>2</h4>
+                    </div>
+                    <div class="third-music">
+                        <h4>3</h4>
+                    </div>
+                    <div class="fourth-music">
+                        <h4>4</h4>
+                    </div>
+                    <div class="exit">X</div>
+                </div>
+                <h3 class="effect">effect</h3>
+                <div class="effect-volume-container">
+                <input type="range" id="effectVolumeSlider" min="0" max="100" value="50">
+                </div>
+            </div>
+            <div class="HTP-container">
+                <div class="htp">
+                    <ul class="key">
+                        <li>UP</li>
+                        <li>LEFT</li>
+                        <li>RIGHT</li>
+                        <li>DOWN</li>
+                        <li>SPACE</li>
+                        <li>CTRL</li>
+                        <li>ESC</li>
+                    </ul>
+                    <ul class="binding-en">
+                        <li class="first-en"><p>--</p> Rotate</li>
+                        <li><p>--</p> Move Left</li>
+                        <li><p>--</p> Move Right</li>
+                        <li><p>--</p> Soft Drop</li>
+                        <li><p>--</p> Hard Drop</li>
+                        <li><p>--</p> Hold</li>
+                        <li><p>--</p> Pause</li>
+                    </ul>
+                    <ul class="binding-kr">
+                        <li class="first-kr">-- 블록 회전</li>
+                        <li>-- 왼쪽</li>
+                        <li>-- 오른쪽</li>
+                        <li>-- 아래</li>
+                        <li>-- 블럭 배치</li>
+                        <li>-- 블럭 홀드</li>
+                        <li>-- 일시정지</li>
+                    </ul>
+                    <div class="htp-exit">X</div>
+                </div>
+                <div class="lang-button-container">
+                    <span class="kr"><p>KR</p></span><span class="en"><p>EN</p></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js" type="module"></script>
+</body>
+
+</html>
