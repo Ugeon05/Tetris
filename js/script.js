@@ -79,43 +79,43 @@ document.getElementById('pauseEffectSlider').addEventListener('input', function(
 
 // 사운드 재생 함수
 function moveSound() {
-    let sound = new Audio("./effect/move.mp3");
+    let sound = new Audio("../effect/move.mp3");
     sound.volume = effectVolume;
     sound.play();
 }
 
 function dropSound() {
-    let sound = new Audio("./effect/drop.mp3");
+    let sound = new Audio("../effect/drop.mp3");
     sound.volume = effectVolume;
     sound.play();
 }
 
 function notHoldSound() {
-    let sound = new Audio("./effect/nothold.mp3");
+    let sound = new Audio("../effect/nothold.mp3");
     sound.volume = effectVolume;
     sound.play();
 }
 
 function matchedSound() {
-    let sound = new Audio("./effect/matched.mp3");
+    let sound = new Audio("../effect/matched.mp3");
     sound.volume = effectVolume;
     sound.play();
 }
 
 function gameOverSound() {
-    let sound = new Audio("./effect/gameover.mp3");
+    let sound = new Audio("../effect/gameover.mp3");
     sound.volume = effectVolume;
     sound.play();
 }
 
 function holdSound() {
-    let sound = new Audio("./effect/hold.mp3");
+    let sound = new Audio("../effect/hold.mp3");
     sound.volume = effectVolume;
     sound.play();
 }
 
 function rotateSound() {
-    let sound = new Audio("./effect/rotate.mp3");
+    let sound = new Audio("../effect/rotate.mp3");
     sound.volume = effectVolume;
     sound.play();
 }
@@ -205,7 +205,7 @@ document.querySelector(".option-button").addEventListener("click", function () {
 
 document.querySelectorAll('.select-music > .first-music, .select-music > .second-music, .select-music > .third-music, .select-music > .fourth-music').forEach(musicButton => {
     musicButton.addEventListener('click', function() {
-        const musicPath = `./music/theme${this.innerText}.mp3`;
+        const musicPath = `../music/theme${this.innerText}.mp3`;
         saveMusic = musicPath;
         playMusic(musicPath);
     });
@@ -238,7 +238,7 @@ let gameInterval;
 
 function init() {
     gameText.style.display = "none";
-    const musicToPlay = saveMusic || "./music/theme1.mp3";
+    const musicToPlay = saveMusic || "../music/theme1.mp3";
     playMusic(musicToPlay);
     gameOver = 0;
     duration = 1250;
