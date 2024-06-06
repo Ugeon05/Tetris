@@ -50,6 +50,19 @@ const movingItem = {
     left: 0,
 };
 
+const soundFiles = [
+    "effect/move.mp3",
+    "effect/drop.mp3",
+    "effect/nothold.mp3",
+    "effect/matched.mp3",
+    "effect/gameover.mp3",
+    "effect/hold.mp3",
+    "effect/rotate.mp3",
+    "music/theme1.mp3",
+    "music/theme2.mp3",
+    "music/theme3.mp3",
+    "music/theme4.mp3"
+];
 
 let effectVolume = document.getElementById('effectVolumeSlider').value / 100;
 
